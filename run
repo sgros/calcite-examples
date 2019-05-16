@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Usage: $0 class args"
+	exit 1
+fi
+
+[ -f target/classpath.txt ] || mvn dependency:build-classpath -Dmdep.outputFile=target/classpath.txt
+
+CLASSPATH=`cat target/classpath.txt`:./target/classes java "$@"
