@@ -21,7 +21,7 @@ I'm using command line to compile and run these examples, so I'll use that.
 
 First, I expect that you have maven in your PATH. To compile all the examples, run the following command:
 
-mvn compile
+`mvn compile`
 
 that should be it.
 
@@ -33,5 +33,5 @@ You need to have PostgreSQL up and running in order to try Sql2Rel example. For 
 
 To run the code use the script `run` in the repository's root directory. For example, to try SQLParse, do the following:
 
-/run hr.fer.zemris.calcite.sqlparser.SQLParse "SELECT * FROM tables"
+`/run hr.fer.zemris.calcite.sqlparser.SQLParse "SELECT * FROM tables"`
 
